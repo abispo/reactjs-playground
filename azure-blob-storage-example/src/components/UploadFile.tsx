@@ -1,9 +1,5 @@
 import { ContainerClient } from "@azure/storage-blob";
-import { ChangeEvent, ChangeEventHandler, useState } from "react";
-
-interface HTMLInputEvent extends ChangeEventHandler<HTMLInputElement> {
-    target: HTMLInputElement & EventTarget
-}
+import { ChangeEvent, useState } from "react";
 
 function UploadFile() {
 

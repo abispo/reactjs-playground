@@ -2,6 +2,7 @@ import './App.css';
 import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
 import ListFiles from './components/ListFiles';
+import UploadFile from './components/UploadFile';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <hr />
       <Routes>
         <Route path="/" element={ <Home /> } />
-        <Route path="list-files" element={ <ListFiles />} />
+        <Route path='upload-file' element={ <UploadFile /> } />
+        <Route path="list-files" element={ <ListFiles /> } />
       </Routes>
     </div>
   );

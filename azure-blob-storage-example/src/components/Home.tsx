@@ -5,7 +5,7 @@ function Home() {
         <>
         <main>
             <nav>
-                <Link to="upload">Upload a File</Link>
+                <Link to="upload-file">Upload a File</Link>
                 <Link to="list-files">List files</Link>
             </nav>
         </main>

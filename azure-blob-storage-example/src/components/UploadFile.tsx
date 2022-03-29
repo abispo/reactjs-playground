@@ -9,8 +9,9 @@ function UploadFile() {
 
         const { target } = event;
         const { files } = target
+        
         if (files) {
-            const file= files[0]
+            const file = files[0]
             setSelectedFile(file);
         }
     }

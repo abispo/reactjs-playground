@@ -1,0 +1,49 @@
+POST http://127.0.0.1:3000/api/client HTTP/1.1
+Content-Type: application/json
+
+{
+    "first_name": "Al",
+    "last_name": "Teddo",
+    "email": "al3@teddo.com",
+    "card_number": "897564",
+    "balance": 0
+}
+
+###
+ 
+POST http://127.0.0.1:3000/api/banker HTTP/1.1
+Content-Type: application/json
+
+{
+    "first_name": "Al",
+    "last_name": "Teddo",
+    "email": "al1@teddo.com",
+    "card_number": "123456789",
+    "employee_number": "98343",
+    "balance": 0
+}
+
+###
+ 
+POST http://127.0.0.1:3000/api/client/1/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "type": "withdraw",
+    "amount": 25
+}
+
+###
+ 
+PUT http://127.0.0.1:3000/api/banker/1/client/1 HTTP/1.1
+Content-Type: application/json
+
+###
+ 
+DELETE http://127.0.0.1:3000/api/client/5 HTTP/1.1
+Content-Type: application/json
+
+###
+ 
+GET http://127.0.0.1:3000/api/clients HTTP/1.1
+Content-Type: application/json
